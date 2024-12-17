@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 0;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#weather-result {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    color: #333;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#weather-result h2 {
+    font-size: 1.8rem;
+    color: #444;
+    margin: 10px;
+}
+
+#weather-result h1 {
+    margin: 20px;
+}
+#weather-result h4 {
+    margin: 5px;
+    color: dimgray;
+}
+#weather-result h5 {
+    margin: 5px;
+}
+#weather-result p {
+    margin: 5px 0;
+}
+#weather-result .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.sub-details {
+    width: 50%;
+}
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    input[type="text"] {
+        width: 70%;
+    }
+
+    button {
+        width: 70%;
+    }
+}
+
+.content {
+    margin: 20px 0;
+    display: flex;
+    height: 50px;
+    justify-content: space-evenly;
+}
+.error {
+    color: red;
+}
